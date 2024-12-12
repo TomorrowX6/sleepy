@@ -1,0 +1,45 @@
+html {
+    font-size: 25px;
+}
+
+rt {
+    font-size: 0.6em;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    /* 背景图设置 */
+    background: url('{{ bg }}') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, {{ alpha }});
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 以下为各种状态的颜色 */
+
+.sleeping {
+    color: gray;
+}
+
+.awake {
+    color: rgb(16, 128, 0);
+}
+
+.error {
+    color: red;
+}
